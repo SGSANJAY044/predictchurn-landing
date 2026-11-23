@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PredictChurn: the churn workspace for small CS teams</title>
+  <meta name="description" content="PredictChurn shows small customer success teams who's quietly leaving, why, and who should act. Built for B2B SaaS on Stripe and PostHog. Join the waitlist.">
+  <meta property="og:title" content="PredictChurn: the churn workspace for small CS teams">
+  <meta property="og:description" content="See who's quietly leaving, why, and who on your CS team should act. Join the waitlist.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sgsanjay044.github.io/predictchurn-landing/">
+  <link rel="canonical" href="https://sgsanjay044.github.io/predictchurn-landing/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="PredictChurn home"><span class="brand-mark" aria-hidden="true"></span>PredictChurn</a>
+      <nav aria-label="Page sections">
+        <a href="#story">How it works</a>
+        <a href="#product">Product</a>
+        <a href="#fit">Who it's for</a>
+        <a href="#trust">Stripe access</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="btn btn-small" href="#waitlist">Join the waitlist</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="glow glow-a" data-speed="0.18" aria-hidden="true"></div>
+      <div class="glow glow-b" data-speed="0.08" aria-hidden="true"></div>
+      <div class="wrap hero-copy">
+        <p class="eyebrow on-dark rise" style="--d:.05s"><span class="pulse" aria-hidden="true"></span>The churn workspace for small CS teams</p>
+        <h1 class="rise" style="--d:.13s">See who's quietly leaving. <em>Get your team on it first.</em></h1>
+        <p class="lede rise" style="--d:.24s">PredictChurn reads Stripe and PostHog, shows why each account is at risk, and gives your customer success team one shared list to work before anyone hits cancel.</p>
+        <div class="hero-cta rise" style="--d:.33s">
+          <a class="btn" href="#waitlist">Join the waitlist</a>
+          <a class="btn btn-ghost" href="#product">Try the sample workspace</a>
+        </div>
+        <p class="hero-note rise" style="--d:.4s">In development. For B2B SaaS teams with 1 to 10 CSMs.</p>
+      </div>
+
+      <div class="wrap stage">
+        <figure class="hero-app" data-speed="-0.05" aria-label="Sample PredictChurn workspace showing at-risk accounts">
+          <div class="window-bar"><i></i><i></i><i></i><span>predictchurn / at-risk</span><b>Sample data</b></div>
+          <div class="hero-app-body">
+            <aside aria-hidden="true">
+              <strong>Workspace</strong>
+              <span class="on">At risk <em>3</em></span><span>My accounts</span><span>Approvals <em>2</em></span><span>Health weights</span><span>Weekly digest</span>
+            </aside>
+            <div class="hero-main">
+              <div class="stats">
+                <div><small>MRR at risk</small><strong data-count="3930" data-prefix="$">$3,930</strong></div>
+                <div><small>Accounts flagged</small><strong data-count="3">3</strong></div>
+                <div><small>Billing issues</small><strong data-count="1">1</strong></div>
+                <div><small>Waiting on approval</small><strong data-count="2">2</strong></div>
+              </div>
+              <div class="mini-table">
+                <div class="mini-row head"><span>Account</span><span>Why it's flagged</span><span>Owner</span><span>Risk</span></div>
+                <div class="mini-row"><span><b>Acme Freight</b><small>Scale · $2,400</small></span><span>Weekly report stopped, seats 18 → 12</span><span class="avatar">AK</span><span class="tag high">82</span></div>
+                <div class="mini-row"><span><b>Example Health</b><small>Growth · $890</small></span><span>Cancels at period end, usage down 64%</span><span class="avatar alt">MR</span><span class="tag high">75</span></div>
+                <div class="mini-row"><span><b>Demo Parcel</b><small>Growth · $640</small></span><span>Card expires in 9 days, usage healthy</span><span class="avatar">AK</span><span class="tag billing">Billing</span></div>
+                <div class="mini-row"><span><b>Sample Ledger</b><small>Starter · $49</small></span><span>Quiet 16 days, normal for this account</span><span class="avatar none">–</span><span class="tag low">11</span></div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <div class="float float-a" data-speed="-0.16" aria-hidden="true"><small>New flag</small><strong>Acme Freight</strong><span>Core action stopped after 11 weeks</span></div>
+        <div class="float float-b" data-speed="-0.11" aria-hidden="true"><small>#cs-team</small><strong>Assigned to Alex</strong><span>$2,400/mo at risk, call this week</span></div>
+        <div class="float float-c" data-speed="-0.22" aria-hidden="true"><small>Needs approval</small><strong>Check-in email</strong><span class="fake-btn">Approve</span></div>
+      </div>
+    </section>
+
+    <section class="fit-strip" aria-label="Who PredictChurn is built for">
+      <div class="wrap">
+        <span><small>Built for</small>B2B SaaS</span>
+        <span><small>Team</small>1 to 10 CSMs</span>
+        <span><small>Revenue</small>$10k to $300k MRR</span>
+        <span><small>Connects to</small>Stripe + PostHog</span>
+      </div>
+    </section>
+
+    <section class="wrap section gap reveal">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2>By the time they click cancel, the decision is weeks old.</h2>
+        <p class="body">Billing still looks fine. The card still goes through. Meanwhile usage is fading, seats are dropping, and nobody on the team owns the account. The exit survey then gives you the politest possible answer.</p>
+        <blockquote>"exit reasons are basically fiction."<cite><a href="https://reddit.com/r/SaaS/comments/1upbt2d/most_churn_feedback_is_too_late_heres_what_im/" rel="noopener">a founder on r/SaaS</a></cite></blockquote>
+      </div>
+      <div class="lies">
+        <div class="lie"><span>What the exit survey says</span><strong>"Too expensive."</strong></div>
+        <div class="lie truth"><span>What the data said six weeks earlier</span>
+          <ul>
+            <li>Main feature used 0 times in 3 weeks</li>
+            <li>Seats reduced from 18 to 12</li>
+            <li>Nobody on your team was assigned to it</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-stage">
+        <div class="wrap story-grid">
+          <div class="story-copy">
+            <p class="eyebrow on-dark">How it works</p>
+            <h2>Follow one account from quiet to kept.</h2>
+            <div class="story-slides">
+              <article class="story-slide" data-step="0"><span>Week 1</span><h3>Everything looks healthy</h3><p>Acme Freight runs its weekly report like clockwork. PredictChurn learns what normal looks like for this account.</p></article>
+              <article class="story-slide" data-step="1"><span>Week 5</span><h3>The account drifts from its own normal</h3><p>The report stops and seats drop. Stripe still shows a paying customer, so no other dashboard reacts.</p></article>
+              <article class="story-slide" data-step="2"><span>Week 6</span><h3>Your team sees why, and who owns it</h3><p>It's flagged with the evidence, weighted for its $2,400 plan, and assigned to Alex on the CS team.</p></article>
+              <article class="story-slide" data-step="3"><span>Week 7</span><h3>Alex approves the next move</h3><p>A check-in email and call link are drafted. Nothing goes out until a person approves it.</p></article>
+              <article class="story-slide" data-step="4"><span>Week 9</span><h3>The account comes back</h3><p>Usage recovers before renewal. The whole team can see what happened and what worked.</p></article>
+            </div>
+            <div class="story-nav" role="group" aria-label="Jump to a step in the story">
+              <button data-go="0" aria-label="Step 1: Healthy"><span>Healthy</span><i><b></b></i></button>
+              <button data-go="1" aria-label="Step 2: Drifting"><span>Drifting</span><i><b></b></i></button>
+              <button data-go="2" aria-label="Step 3: Flagged"><span>Flagged</span><i><b></b></i></button>
+              <button data-go="3" aria-label="Step 4: Approved"><span>Approved</span><i><b></b></i></button>
+              <button data-go="4" aria-label="Step 5: Recovered"><span>Recovered</span><i><b></b></i></button>
+            </div>
+          </div>
+
+          <figure class="story-card" aria-label="Sample account health chart for Acme Freight">
+            <div class="story-head">
+              <div><strong>Acme Freight</strong><small>Scale · $2,400/mo · Sample</small></div>
+              <div class="story-risk"><span class="tag low" id="story-status">Healthy</span><div><small>Risk</small><strong id="story-score">12</strong></div></div>
+            </div>
+            <div class="story-chart">
+              <svg viewBox="0 0 520 200" role="img" aria-label="Weekly report usage falls after week 4 and recovers by week 9">
+                <path class="line-bg" d="M0 48 L65 42 L130 50 L195 44 L260 118 L325 172 L390 168 L455 88 L520 52"/>
+                <path id="story-line" class="line" d="M0 48 L65 42 L130 50 L195 44 L260 118 L325 172 L390 168 L455 88 L520 52"/>
+                <circle class="mark" cx="260" cy="118" r="4"/>
+                <circle class="mark" cx="325" cy="172" r="4"/>
+                <circle class="mark" cx="390" cy="168" r="4"/>
+                <circle class="mark" cx="520" cy="52" r="4"/>
+                <circle id="story-ring" r="7" cx="0" cy="48"/>
+                <circle id="story-dot" r="7" cx="0" cy="48"/>
+              </svg>
+              <div class="story-weeks" aria-hidden="true"><span style="left:0%">W1</span><span style="left:12.5%">W2</span><span style="left:25%">W3</span><span style="left:37.5%">W4</span><span style="left:50%">W5</span><span style="left:62.5%">W6</span><span style="left:75%">W7</span><span style="left:87.5%">W8</span><span style="left:100%">W9</span></div>
+            </div>
+            <ol class="story-feed">
+              <li><time>W1</time><span>Normal rhythm learned</span></li>
+              <li><time>W5</time><span>Report stopped, seats 18 → 12</span></li>
+              <li><time>W6</time><span>Flagged and assigned to Alex</span></li>
+              <li><time>W7</time><span>Check-in approved by Alex</span></li>
+              <li><time>W9</time><span>Weekly report running again</span></li>
+            </ol>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section product" id="product">
+      <div class="section-head reveal">
+        <p class="eyebrow">Sample workspace</p>
+        <h2>One place for your whole CS team to work churn.</h2>
+        <p class="body">Click around. Select accounts, change the health weights, and approve a move. Everything here is sample data.</p>
+      </div>
+      <div class="workspace reveal">
+        <div class="tabs" role="tablist" aria-label="Sample workspace views">
+          <button role="tab" id="tab-risk" aria-controls="panel-risk" aria-selected="true">At-risk list</button>
+          <button role="tab" id="tab-weights" aria-controls="panel-weights" aria-selected="false" tabindex="-1">Health weights</button>
+          <button role="tab" id="tab-approvals" aria-controls="panel-approvals" aria-selected="false" tabindex="-1">Approvals</button>
+          <button role="tab" id="tab-digest" aria-controls="panel-digest" aria-selected="false" tabindex="-1">Monday digest</button>
+          <span class="sample-pill">Sample data</span>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-risk" aria-labelledby="tab-risk"></div>
+        <div class="panel" role="tabpanel" id="panel-weights" aria-labelledby="tab-weights" hidden></div>
+        <div class="panel" role="tabpanel" id="panel-approvals" aria-labelledby="tab-approvals" hidden></div>
+        <div class="panel" role="tabpanel" id="panel-digest" aria-labelledby="tab-digest" hidden>
+          <div class="digest">
+            <small>Monday digest · to cs-team</small>
+            <h3>3 accounts need your team this week</h3>
+            <p class="digest-total"><strong>$3,930/mo</strong> at risk across your accounts</p>
+            <ol>
+              <li><b>Acme Freight</b> $2,400/mo. Weekly report stopped. <span>Alex owns it, call this week.</span></li>
+              <li><b>Example Health</b> $890/mo. Cancels at period end. <span>Maya owns it, email waiting for approval.</span></li>
+              <li><b>Demo Parcel</b> $640/mo. Card expires in 9 days. <span>Not real churn, send a card reminder.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="pillars reveal">
+        <article><span>01</span><h3>Reasons, not mystery scores</h3><p>Every flag shows its evidence, so a CSM can check it in seconds.</p></article>
+        <article><span>02</span><h3>Weights that fit each plan</h3><p>Two quiet weeks on $49 and on $2,000 should never look the same.</p></article>
+        <article><span>03</span><h3>Team workflow built in</h3><p>Owners, saved views, shared reports, and bulk actions.</p></article>
+        <article><span>04</span><h3>Actions with approval</h3><p>Email, Slack, Stripe offers, and call booking from one queue.</p></article>
+        <article><span>05</span><h3>A Monday digest</h3><p>The week's priorities in the team's inbox before standup.</p></article>
+        <article><span>06</span><h3>Works with your AI tools</h3><p>An MCP server to ask about at-risk accounts. Changes still need approval.</p></article>
+      </div>
+    </section>
+
+    <section class="fit" id="fit">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Who it's for</p>
+          <h2>Too big for a spreadsheet. Too small for an enterprise CS platform.</h2>
+        </div>
+        <div class="fit-grid reveal">
+          <article class="yes">
+            <h3>A great fit if you</h3>
+            <ul>
+              <li>Run B2B SaaS on Stripe</li>
+              <li>Have 1 to 10 people doing customer success</li>
+              <li>Have customers paying $100+ a month</li>
+              <li>Track accounts in a sheet, Slack, or memory</li>
+              <li>Need your first real churn process</li>
+            </ul>
+          </article>
+          <article class="no">
+            <h3>Probably not for you if you</h3>
+            <ul>
+              <li>Are pre-revenue or have a handful of customers</li>
+              <li>Sell mostly B2C or through app stores</li>
+              <li>Only want a cancel-button flow</li>
+              <li>Need enterprise procurement today</li>
+              <li>Already run a full CS platform and love it</li>
+            </ul>
+          </article>
+        </div>
+        <div class="compare reveal">
+          <h3>Where it fits</h3>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Comparison of churn tool categories">
+            <table>
+              <thead><tr><th scope="col">What your team needs</th><th scope="col">Stripe alone</th><th scope="col">Cancel-flow tools</th><th scope="col">Enterprise CS platforms</th><th scope="col" class="us">PredictChurn</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Billing and usage together</th><td>No</td><td>Partly</td><td>Yes</td><td class="us">Yes</td></tr>
+                <tr><th scope="row">Acts weeks before the cancel</th><td>No</td><td>Partly</td><td>Yes</td><td class="us">Yes</td></tr>
+                <tr><th scope="row">Default weights per plan</th><td>No</td><td>No</td><td>Custom setup</td><td class="us">Yes</td></tr>
+                <tr><th scope="row">Shared owners and bulk actions</th><td>No</td><td>No</td><td>Yes</td><td class="us">Yes</td></tr>
+                <tr><th scope="row">Sized for a 1 to 10 person team</th><td>Yes</td><td>Yes</td><td>Often heavy</td><td class="us">Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="fine">Broad categories as of November 2026. Individual products vary. PredictChurn column describes the planned v1.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" id="trust">
+      <div class="wrap trust-grid">
+        <div class="reveal">
+          <p class="eyebrow on-dark">Your Stripe access</p>
+          <h2>You stay in control of your Stripe.</h2>
+          <p class="body">We start with the least access we can and ask for more only when you turn on a feature that needs it.</p>
+        </div>
+        <div class="perm-list reveal">
+          <div class="perm"><small>When you connect</small><strong>Read-only</strong><p>Customers, subscriptions, invoices, and coupons. PredictChurn can't change anything in Stripe at this stage.</p></div>
+          <div class="perm"><small>Only if you turn on offers</small><strong>Subscription write</strong><p>Used to apply an existing coupon or pause. Every change needs someone on your team to approve it.</p></div>
+          <div class="perm"><small>Never</small><strong>Full card numbers</strong><p>Stripe doesn't share them with apps, so they never reach us.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section status reveal">
+      <div>
+        <p class="eyebrow">Where we are</p>
+        <h2>Honest status: we're building v1 now.</h2>
+      </div>
+      <div class="roadmap">
+        <div><span class="dot now"></span><div><strong>v1, in development</strong><p>Stripe + PostHog, per-plan health scores, at-risk workspace, approved actions, Monday digest, MCP.</p></div></div>
+        <div><span class="dot"></span><div><strong>Next</strong><p>Support tickets from Intercom and Help Scout, Stripe Meters, and an SDK for in-app offers.</p></div></div>
+        <div><span class="dot"></span><div><strong>Later</strong><p>Detailed roles and permissions, and deeper AI analysis.</p></div></div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="wrap price-grid reveal">
+        <div>
+          <p class="eyebrow">Founding price</p>
+          <h2>One simple plan while we're early.</h2>
+          <p class="body">Waitlist teams get the founding price when v1 opens. No card, no commitment. You decide once you've seen it working.</p>
+        </div>
+        <div class="price-card">
+          <small>Founding plan</small>
+          <div class="price"><strong>$199</strong><span>/month</span></div>
+          <ul>
+            <li>Everything in v1</li>
+            <li>Your whole CS team in one workspace</li>
+            <li>Price locked while you stay subscribed</li>
+            <li>A direct line to the person building it</li>
+          </ul>
+          <a class="btn" href="#waitlist">Join the waitlist</a>
+          <p>Nothing to pay today.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section founder reveal">
+      <div class="founder-mark" aria-hidden="true">S</div>
+      <div>
+        <p class="eyebrow">Why I'm building this</p>
+        <blockquote>I went through about 300 r/SaaS churn posts. The same thing kept coming up: teams don't need another pop-up at the cancel button. They need to know who's drifting, why, and whose job it is to do something.</blockquote>
+        <p class="sign"><strong>Sanjay</strong>, founder. Building in public on <a href="https://x.com/sgsanjayco" rel="noopener">X</a> and my <a href="https://sgsanjay044.github.io/myself/" rel="noopener">blog</a>.</p>
+      </div>
+    </section>
+
+    <section class="wrap section faq">
+      <p class="eyebrow">Questions</p>
+      <h2>Fair things to ask.</h2>
+      <div class="faq-list">
+        <details><summary>Is PredictChurn live?</summary><p>Not yet. v1 is in development and waitlist teams get access first.</p></details>
+        <details><summary>How is this different from other churn tools?</summary><p>Many churn tools focus on the cancel button, failed payments, or a founder working alone. PredictChurn is built around a small CS team sharing one at-risk list, with owners, per-plan weights, and approvals.</p></details>
+        <details><summary>Will it message our customers on its own?</summary><p>No. Emails, Slack alerts, offers, and call invites all wait for someone on your team to approve them.</p></details>
+        <details><summary>We don't use PostHog. Can we still join?</summary><p>Yes. PostHog is the first usage source. Tell us what you use on the waitlist, because it helps decide what we support next.</p></details>
+        <details><summary>Does joining the waitlist cost anything?</summary><p>No. There's no card and no commitment.</p></details>
+      </div>
+    </section>
+
+    <section class="waitlist" id="waitlist">
+      <div class="glow glow-c" aria-hidden="true"></div>
+      <div class="wrap wait-grid">
+        <div>
+          <p class="eyebrow on-dark">Early access</p>
+          <h2>Get your team in first.</h2>
+          <p class="body">Tell us about your team. Your answers help shape what gets built, and waitlist teams get the founding price.</p>
+        </div>
+        <div class="form-card" id="form-slot" data-tally-id="">
+          <p>Send a quick note and you're on the list.</p>
+          <a class="btn" href="mailto:sgsanjayco@gmail.com?subject=PredictChurn%20waitlist&body=Company%3A%0AMRR%20range%3A%0ACS%20team%20size%3A%0ACurrent%20churn%20tool%3A">Email to join the waitlist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span class="brand"><span class="brand-mark" aria-hidden="true"></span>PredictChurn</span>
+      <span>Built in public by <a href="https://x.com/sgsanjayco" rel="noopener">@sgsanjayco</a></span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
